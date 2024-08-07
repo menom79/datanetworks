@@ -1,0 +1,16 @@
+To router 2
+LUBUNTU3
+set service dhcp-server shared-network-name lubuntu3 subnet 192.168.0.128/26 default-router 192.168.0.129
+set service dhcp-server shared-network-name lubuntu3 subnet 192.168.0.128/26 range PCs start 192.168.0.135
+set service dhcp-server shared-network-name lubuntu3 subnet 192.168.0.128/26 range PCs stop 192.168.0.145
+
+These rows go to vyos
+workstations
+set service dhcp-server shared-network-name lubuntu3 subnet 192.168.0.0/26 default-router 192.168.0.62
+set service dhcp-server shared-network-name lubuntu3 subnet 192.168.0.0/26 range PCs start 192.168.0.5
+set service dhcp-server shared-network-name lubuntu3 subnet 192.168.0.0/26 range PCs stop 192.168.0.10
+
+brave_new_vlan
+set service dhcp-server shared-network-name lubuntu3 subnet 192.168.0.64/26 default-router 192.168.0.126
+set service dhcp-server shared-network-name lubuntu3 subnet 192.168.0.64/26 range PCs start 192.168.0.75
+set service dhcp-server shared-network-name lubuntu3 subnet 192.168.0.64/26 range PCs stop 192.168.0.85

@@ -1,0 +1,5 @@
+E03
+192.168.0.0/26, 1st subnet, vlan workstation, tag 5
+192.168.0.64/26, 2nd subnet, vlan "brave_new_vlan", tag 25
+
+10.0.0.0/28
